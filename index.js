@@ -11,12 +11,12 @@ const sleep = (seconds) => execSync(`sleep ${seconds || Math.random() * 2}`)
 // keycode 36 is ⏎
 const pressEnterKey = () => execScript(`${systemEvents}.keyCode(36)`)
 
-const checkCiscoExsit = () => 
+const isCiscoExsit = () => 
     execScript(
         `${systemEvents}.processes().filter(process => process.name() === 'Cisco AnyConnect Secure Mobility Client')`
     ).toString('utf8').length > 10
 
-while(checkCiscoExsit()) {
+while(isCiscoExsit()) {
   try {
     execScript(`${clientName}.quit()`)
   } catch (error) {

@@ -1,0 +1,6 @@
+{
+    "vpnName": "vpnName",
+    "password": "password",
+    "authenticationMethod": 1,
+    "secretKey": "secretKey"
+}

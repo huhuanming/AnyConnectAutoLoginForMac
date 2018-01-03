@@ -11,7 +11,7 @@ npm install
 At first you should fill data into setting.json
 
 ```shell
-cp setting.json.example cp setting.json
+cp setting.json.example setting.json
 ```
 
 then enjoy it!

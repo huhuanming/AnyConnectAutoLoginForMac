@@ -1,6 +1,6 @@
 const speakeasy = require('speakeasy')
 const fs = require('fs')
-const execSync = require('child_process').execSync;
+const execSync = require('child_process').execSync
 
 const setting = JSON.parse(fs.readFileSync('./setting.json'))
 

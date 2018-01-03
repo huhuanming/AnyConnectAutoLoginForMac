@@ -1,4 +1,12 @@
-# How To Use
+# READ ME
+
+## How to Start
+
+```shell
+npm install
+```
+
+## How to Use
 
 At first you should fill data into setting.json
 

@@ -6,7 +6,7 @@ const setting = JSON.parse(fs.readFileSync('./setting.json'))
 const clientName = "Application('com.cisco.Cisco-AnyConnect-Secure-Mobility-Client')"
 const systemEvents = "Application('System Events')"
 
-const execScript = command => execSync(`osascript -l JavaScript -e "${command}"`)
+const execScript = command => execSync(`osascript -l JavaScript -e "${command}"`, { encoding: 'utf8' })
 const sleep = (seconds) => execSync(`sleep ${seconds || Math.random() * 2}`)
 // keycode 36 is ⏎
 const pressEnterKey = () => execScript(`${systemEvents}.keyCode(36)`)
@@ -14,7 +14,7 @@ const pressEnterKey = () => execScript(`${systemEvents}.keyCode(36)`)
 const isCiscoExsit = () => 
     execScript(
         `${systemEvents}.processes().filter(process => process.name() === 'Cisco AnyConnect Secure Mobility Client')`
-    ).toString('utf8').length > 10
+    ).length > 10
 
 while(isCiscoExsit()) {
   try {

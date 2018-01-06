@@ -3,8 +3,6 @@ const fs = require('fs')
 const execSync = require('child_process').execSync
 
 const setting = JSON.parse(fs.readFileSync('./setting.json'))
-const clientName = "Application('com.cisco.Cisco-AnyConnect-Secure-Mobility-Client')"
-const systemEvents = "Application('System Events')"
 
 const token = speakeasy.time({
     secret: setting.secretKey, 

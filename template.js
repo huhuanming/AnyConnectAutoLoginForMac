@@ -25,22 +25,24 @@ while (!windows.at(1).buttons.byName("Disconnect").exists() && !(reTry[0] > 3 ||
       vpnWindow.buttons.byName("OK").click()
       reTry[1] += 1
 	}
-	if (vpnWindow.scrollAreas.at(0).exists() && vpnWindow.scrollAreas.at(0).textAreas().length > 0 && vpnWindow.scrollAreas.at(0).textAreas.at(0).exists()) {
+	if (vpnWindow.scrollAreas.at(0).exists() && vpnWindow.scrollAreas.at(0).textAreas.at(0).exists()) {
 		if (vpnWindow.scrollAreas.at(0).textAreas.at(0).value().includes("Please select your second authentication method [num]:")) {
 			vpnWindow.textFields.at(0).value = authenticationMethod
 			vpnWindow.buttons.byName("Continue").click()
 			reTry[2] += 1
 		}
 		
-		if (vpnWindow.scrollAreas.at(0).textAreas.at(0).value().includes("Enter the code for ")) {
+		if (vpnWindow.exists() && vpnWindow.scrollAreas.at(0).textAreas.at(0).value().includes("Enter the code for ")) {
 			vpnWindow.textFields[0].value = token
 			vpnWindow.buttons.byName("Continue").click()
 			reTry[3] += 1
 		}
 	}
   } else {
-	windows.at(1).buttons.byName("Connect").click()
-    reTry[0] += 1
+	if (windows.at(1).buttons.byName("Connect").exists()) {
+		windows.at(1).buttons.byName("Connect").click()
+		reTry[0] += 1
+	}
   }
   delay(2 * Math.random())
 }

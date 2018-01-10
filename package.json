@@ -1,0 +1,27 @@
+{
+  "name": "autologinciscoformac",
+  "version": "1.0.0",
+  "description": "auto login cisco for mac",
+  "main": "index.js",
+  "dependencies": {
+    "speakeasy": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huhuanming/AutoLoginCiscoForMac.git"
+  },
+  "keywords": [
+    "autologin",
+    "cisco"
+  ],
+  "author": "huhuanming",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huhuanming/AutoLoginCiscoForMac/issues"
+  },
+  "homepage": "https://github.com/huhuanming/AutoLoginCiscoForMac#readme"
+}

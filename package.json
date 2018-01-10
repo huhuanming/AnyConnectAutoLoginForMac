@@ -1,7 +1,7 @@
 {
-  "name": "autologinciscoformac",
+  "name": "Cisco AnyConnect Secure Mobility Client Auto Login For Mac",
   "version": "1.0.0",
-  "description": "auto login cisco for mac",
+  "description": "auto login cisco anyconnect for mac",
   "main": "index.js",
   "dependencies": {
     "speakeasy": "^2.0.0"
@@ -12,16 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huhuanming/AutoLoginCiscoForMac.git"
+    "url": "git+https://github.com/huhuanming/AnyConnectAutoLoginForMac.git"
   },
   "keywords": [
     "autologin",
-    "cisco"
+    "cisco",
+    "anyconnect"
   ],
   "author": "huhuanming",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/huhuanming/AutoLoginCiscoForMac/issues"
+    "url": "https://github.com/huhuanming/AnyConnectAutoLoginForMac/issues"
   },
-  "homepage": "https://github.com/huhuanming/AutoLoginCiscoForMac#readme"
+  "homepage": "https://github.com/huhuanming/AnyConnectAutoLoginForMac#readme"
 }

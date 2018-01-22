@@ -1,5 +1,5 @@
 {
-  "name": "Cisco AnyConnect Secure Mobility Client Auto Login For Mac",
+  "name": "autologin",
   "version": "1.0.0",
   "description": "auto login cisco anyconnect for mac",
   "main": "index.js",
